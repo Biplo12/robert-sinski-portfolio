@@ -17,7 +17,7 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 export default function HomePage() {
   return (
     <main className='from-liberty-blue to-dark-eclipse relative flex min-h-screen w-full flex-col bg-gradient-to-br text-white'>
-      {!isProd && (
+      {isProd && (
         <AnimatedCursor
           innerSize={15}
           outerSize={15}
