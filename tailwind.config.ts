@@ -11,6 +11,7 @@ export default {
       colors: {
         'liberty-blue': '#0A192F',
         spindrift: '#64FFDA',
+        'dark-eclipse': '#112240',
       },
       fontSize: {
         '4xl': '2.5rem',
