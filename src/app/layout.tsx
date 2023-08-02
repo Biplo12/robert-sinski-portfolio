@@ -3,8 +3,6 @@ import * as React from 'react';
 
 import '@/styles/globals.css';
 
-import Navbar from '@/components/Layout/Navbar';
-
 import { siteConfig } from '@/constant/config';
 export const metadata: Metadata = {
   title: {
@@ -37,10 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>
-        <Navbar />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

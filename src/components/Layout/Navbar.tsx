@@ -11,9 +11,9 @@ const Navbar: React.FC = (): JSX.Element => {
   const scrollDirection = useScrollDirection();
   return (
     <nav
-      className={`fixed z-20 w-full  ${
+      className={`fixed z-20 w-full ${
         scrollDirection === 'down' ? '-top-36' : 'top-0'
-      } bg-liberty-blue flex h-20 items-center justify-between px-12 text-white transition duration-200 ease-linear`}
+      } flex h-20 items-center justify-between px-12 text-white transition duration-200 ease-linear`}
       role='navigation'
     >
       <NavbarLogo />
