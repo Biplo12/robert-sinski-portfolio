@@ -3,7 +3,6 @@
 import dynamic from 'next/dynamic';
 import * as React from 'react';
 
-import AboutMe from '@/components/AboutMe/AboutMe';
 import Hero from '@/components/Hero/Hero';
 import Navbar from '@/components/Layout/Navbar';
 import Socials from '@/components/Socials/Socials';
@@ -32,7 +31,7 @@ export default function HomePage() {
         <Hero />
       </div>
       <Socials />
-      <AboutMe />
+      {/* <AboutMe /> */}
     </main>
   );
 }

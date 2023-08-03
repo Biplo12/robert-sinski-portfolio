@@ -1,7 +1,18 @@
 import React from 'react';
-const ResumeButton: React.FC = (): JSX.Element => {
+
+interface IResumeButtonProps {
+  isMenuOpen?: boolean;
+}
+
+const ResumeButton: React.FC<IResumeButtonProps> = ({
+  isMenuOpen = false,
+}): JSX.Element => {
   return (
-    <div className='relative z-20 flex flex-col items-start justify-start'>
+    <div
+      className={`relative z-20 flex flex-col items-start justify-start ${
+        isMenuOpen ? 'mxmd:flex' : 'mxmd:hidden'
+      }`}
+    >
       <a
         href='/resume.pdf'
         target='_blank'

@@ -6,7 +6,7 @@ const AboutMeHeader: React.FC = (): JSX.Element => {
         <span className='text-spindrift text-xl'>01. </span>
         About Me
       </h2>
-      <div className='h-[1px] w-48 bg-white bg-opacity-20' />
+      <div className='h-[1px] w-[450px] bg-white bg-opacity-20' />
     </div>
   );
 };

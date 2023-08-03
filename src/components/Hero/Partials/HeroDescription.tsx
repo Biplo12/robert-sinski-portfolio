@@ -1,8 +1,9 @@
 import React from 'react';
+
+import { MAIL } from '@/lib/vars';
 const HeroDescription: React.FC = (): JSX.Element => {
-  const MAIL = 'robert.sinski@outlook.com';
   return (
-    <p className='mt-4 text-lg text-[rgba(255,255,255,0.65)]'>
+    <p className='text-grey-text mxmd:text-md mt-4 text-lg'>
       Passionate about learning and problem-solving. <br />
       Actively seeking new opportunities to contribute expertise and deliver
       exceptional results. <br />

@@ -5,7 +5,7 @@ import HeroDescription from '@/components/Hero/Partials/HeroDescription';
 import HeroHeader from '@/components/Hero/Partials/HeroHeader';
 const Hero: React.FC = (): JSX.Element => {
   return (
-    <div className='flex flex-col items-start justify-start'>
+    <div className='mx-auto w-full max-w-[1000px] px-4'>
       <HeroHeader />
       <HeroDescription />
       <HeroButton />
