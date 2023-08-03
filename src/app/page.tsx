@@ -1,11 +1,13 @@
 'use client';
 
+import { Contact } from 'lucide-react';
 import dynamic from 'next/dynamic';
 import * as React from 'react';
 
 import AboutMe from '@/components/AboutMe/AboutMe';
 import Hero from '@/components/Hero/Hero';
 import Navbar from '@/components/Layout/Navbar';
+import Projects from '@/components/Projects/Projects';
 import Socials from '@/components/Socials/Socials';
 import Work from '@/components/Work/Work';
 
@@ -36,6 +38,8 @@ export default function HomePage() {
         <Socials />
         <AboutMe />
         <Work />
+        <Projects />
+        <Contact />
       </div>
     </main>
   );

@@ -17,7 +17,7 @@ const ResumeButton: React.FC<IResumeButtonProps> = ({
         href='/resume.pdf'
         target='_blank'
         rel='noopener noreferrer'
-        className='border-spindrift text-spindrift bg-liberty-blue relative z-20 w-[85px] rounded-sm border px-5 py-2 text-sm font-bold transition duration-150 ease-linear hover:translate-x-[-2px] hover:translate-y-[-2px] hover:transform'
+        className='border-spindrift text-spindrift bg-liberty-blue relative z-20 w-[86px] rounded-sm border px-5 py-2 text-sm font-bold transition duration-150 ease-linear hover:translate-x-[-2px] hover:translate-y-[-2px] hover:transform'
       >
         Resume
       </a>

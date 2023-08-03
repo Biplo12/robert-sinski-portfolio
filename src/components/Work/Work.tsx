@@ -6,9 +6,9 @@ import WorkNavigation from '@/components/Work/Partials/WorkNavigation';
 const Work: React.FC = (): JSX.Element => {
   const [activeItem, setActiveItem] = useState(0);
   return (
-    <div className='flex h-auto min-h-[80vh] w-full flex-col items-center justify-center py-10'>
+    <div className='flex h-auto min-h-[40vh] w-full flex-col items-center justify-center'>
       <WorkHeader />
-      <div className='mt-10 flex min-h-[350px] w-full max-w-[975px] items-start justify-center gap-10'>
+      <div className='mxmd:flex-col mt-10 flex min-h-[350px] w-full max-w-[975px] items-start justify-end gap-10'>
         <WorkNavigation setActiveItem={setActiveItem} activeItem={activeItem} />
         <WorkContent activeItem={activeItem} />
       </div>

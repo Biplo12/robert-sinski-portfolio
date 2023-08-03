@@ -28,8 +28,8 @@ const WorkContent: React.FC<IWorkContentProps> = ({
       date: 'May 2021 - June 2021',
       description: [
         'Specializing in crafting stunning, user-friendly WordPress websites tailored to your business needs.',
-        'Engage your audience with compelling and persuasive content, including website copy and social media posts.',
-        'Improve your online visibility and search engine rankings through effective SEO strategies and keyword research.',
+        'Engage audience with compelling and persuasive content, including website copy and social media posts.',
+        'Improve online visibility and search engine rankings through effective SEO strategies and keyword research.',
       ],
     },
   ];
