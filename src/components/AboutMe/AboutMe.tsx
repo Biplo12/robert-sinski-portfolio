@@ -4,7 +4,7 @@ import AboutMeDescription from '@/components/AboutMe/Partials/AboutMeDescription
 import AboutMeHeader from '@/components/AboutMe/Partials/AboutMeHeader';
 const AboutMe: React.FC = (): JSX.Element => {
   return (
-    <div className='flex h-auto min-h-[80vh] w-full flex-col items-center justify-center py-10'>
+    <div className='flex h-auto min-h-[80vh] w-full flex-col items-center justify-center'>
       <AboutMeHeader />
       <AboutMeDescription />
     </div>
