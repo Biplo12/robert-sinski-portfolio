@@ -22,7 +22,7 @@ const Socials: React.FC = (): JSX.Element => {
     },
   ];
   return (
-    <div className='mxmd:hidden fixed bottom-0 left-8 flex flex-col items-center justify-center gap-5'>
+    <div className='mxmd:hidden fixed bottom-0 left-6 flex flex-col items-center justify-center gap-5'>
       {socialLinks.map((sociallink) => (
         <a
           key={sociallink.name}

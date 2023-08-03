@@ -15,8 +15,8 @@ const NavbarResponsiveMenu: React.FC<INavbarResponsiveMenuProps> = ({
   toggleMenu,
 }): JSX.Element => {
   return (
-    <div className='bg-liberty-blue relative z-50 h-screen w-[250px]'>
-      <div className='absolute right-4 top-4'>
+    <div className='bg-liberty-blue relative z-50 h-screen w-[275px]'>
+      <div className='absolute right-8 top-4'>
         <HamburgerMenuIcon isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </div>
       <ul className='mr-3 flex h-full flex-col items-center justify-center gap-6'>

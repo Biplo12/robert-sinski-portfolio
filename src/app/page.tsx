@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import * as React from 'react';
 
+import AboutMe from '@/components/AboutMe/AboutMe';
 import Hero from '@/components/Hero/Hero';
 import Navbar from '@/components/Layout/Navbar';
 import Socials from '@/components/Socials/Socials';
@@ -27,11 +28,13 @@ export default function HomePage() {
         />
       )}
       <Navbar />
-      <div className='flex h-screen w-full flex-col items-center justify-center'>
-        <Hero />
+      <div className='mxmd:px-8 px-20'>
+        <div className='flex h-screen w-full flex-col items-center justify-center'>
+          <Hero />
+        </div>
+        <Socials />
+        <AboutMe />
       </div>
-      <Socials />
-      {/* <AboutMe /> */}
     </main>
   );
 }

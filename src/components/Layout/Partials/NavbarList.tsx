@@ -32,7 +32,7 @@ const NavbarList: React.FC = (): JSX.Element => {
       </nav>
       <HamburgerMenuIcon isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       <div
-        className={`mxmd:flex absolute duration-200 ease-linear ${
+        className={`mxmd:flex fixed duration-200 ease-linear ${
           isMenuOpen ? 'right-0 top-0 flex' : '-right-[18rem] top-0 hidden'
         }`}
       >
