@@ -38,7 +38,7 @@ const WorkContent: React.FC<IWorkContentProps> = ({
     <div className='flex w-full max-w-[800px] flex-col items-start justify-center'>
       <div className='flex w-full flex-col items-start justify-center gap-4'>
         <div className='flex w-full flex-col items-start justify-center gap-2'>
-          <div className='flex items-center justify-start gap-2'>
+          <div className='font-calibre flex items-center justify-start gap-2'>
             <h3 className='text-left text-xl font-bold text-white'>
               {item.title}
             </h3>
@@ -53,16 +53,16 @@ const WorkContent: React.FC<IWorkContentProps> = ({
               </a>
             )}
           </div>
-          <h4 className='text-left text-sm font-bold text-white'>
+          <h4 className='text-left font-mono text-sm font-bold text-white'>
             {item.date}
           </h4>
         </div>
-        <ul className='marker:text-spindrift flex w-full list-inside list-disc flex-col items-start justify-center gap-2'>
+        <ul className='marker:text-spindrift font-calibre flex w-full list-inside list-disc flex-col items-start justify-center gap-2'>
           {item.description.map((description, index) => {
             return (
               <li
                 key={index}
-                className='max-w-[600px] text-left text-sm font-bold text-white'
+                className='text-grey-text max-w-[600px] text-left text-sm font-bold'
               >
                 {description}
               </li>

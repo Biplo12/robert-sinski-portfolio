@@ -17,7 +17,7 @@ const skillsData = [
 
 const AboutMeSkillsList: React.FC = (): JSX.Element => {
   return (
-    <ul className='mxmd:flex-col mxmd:gap-0 marker:text-spindrift flex gap-20 text-white'>
+    <ul className='mxmd:flex-col mxmd:gap-0 marker:text-spindrift flex gap-20 font-mono text-white'>
       {skillsData.map((category) => (
         <li key={category.title}>
           <br />

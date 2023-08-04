@@ -9,7 +9,7 @@ const AboutMeDescription: React.FC = (): JSX.Element => {
     <div className='flex h-full flex-col items-start justify-center'>
       <div className='mt-4 flex items-center justify-center'>
         <div>
-          <p className='text-grey-text max-w-[600px] whitespace-pre-wrap break-words'>
+          <p className='text-grey-text font-calibre max-w-[600px] whitespace-pre-wrap break-words'>
             As a passionate and versatile full-stack engineer, I find joy in
             crafting digital marvels that breathe life on the internet. My
             expertise lies in developing exceptional websites and web

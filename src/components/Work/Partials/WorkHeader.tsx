@@ -1,7 +1,7 @@
 import React from 'react';
 const WorkHeader: React.FC = (): JSX.Element => {
   return (
-    <div className='mx-auto mb-4 flex w-full max-w-[975px] items-center justify-start gap-4'>
+    <div className='mx-auto mb-4 flex w-full max-w-[975px] items-center justify-start gap-4 font-mono'>
       <h2 className='text-left text-2xl font-bold text-white'>
         <span className='text-spindrift text-xl'>02. </span>
         Work history

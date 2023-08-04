@@ -5,9 +5,6 @@ export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        primary: ['Inter', ...defaultTheme.fontFamily.sans],
-      },
       colors: {
         'liberty-blue': '#0A192F',
         spindrift: '#64FFDA',
@@ -39,6 +36,18 @@ export default {
         mxlg: { max: '1024px' },
         // => @media (max-width: 1280px) { ... }
         mxxl: { max: '1280px' },
+      },
+      fontFamily: {
+        calibre: ['Calibre', 'Inter', ...defaultTheme.fontFamily.sans],
+        mono: [
+          'SFMono-Regular',
+          'Menlo',
+          'Monaco',
+          'Consolas',
+          'Liberation Mono',
+          'Courier New',
+          'monospace',
+        ],
       },
     },
   },

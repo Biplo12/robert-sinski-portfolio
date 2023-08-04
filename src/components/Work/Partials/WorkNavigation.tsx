@@ -15,7 +15,7 @@ const WorkNavigation: React.FC<IWorkNavigationProps> = ({
   };
   return (
     <div>
-      <div className='flex flex-col items-start justify-center'>
+      <div className='flex flex-col items-start justify-center font-mono'>
         {workNavItems.map((item, index) => {
           return (
             <button

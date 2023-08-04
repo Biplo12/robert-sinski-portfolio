@@ -13,7 +13,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
     <div
       className={`flex items-${
         isLeftSide ? 'start' : 'end'
-      } z-20 justify-center bg-[#0d192e]`}
+      } font-calibre z-20 justify-center bg-[#0d192e]`}
     >
       <ul
         className={`marker:text-spindrift flex w-full list-inside list-disc flex-col items-${

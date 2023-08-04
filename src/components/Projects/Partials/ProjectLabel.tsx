@@ -11,16 +11,18 @@ const ProjectLabel: React.FC<IProjectLabelProps> = ({
 }): JSX.Element => {
   return (
     <>
-      {isLeftSide && (
-        <h2 className='text-spindrift text-left'>Featured Project</h2>
-      )}
-      {!isLeftSide && (
-        <h2 className='text-spindrift text-right'>Featured Project</h2>
-      )}
+      <h2
+        className={`text-spindrift font-mono ${
+          isLeftSide ? 'text-left' : 'text-right'
+        }`}
+      >
+        Featured Project
+      </h2>
+
       <h1
         className={`text-gray-text mb-6 text-${
           isLeftSide ? 'left' : 'right'
-        } mxmd:text-center text-2xl font-bold`}
+        } mxmd:text-center font-calibre text-2xl font-bold`}
       >
         {title}
       </h1>

@@ -19,12 +19,12 @@ const NavbarResponsiveMenu: React.FC<INavbarResponsiveMenuProps> = ({
       <div className='absolute right-8 top-4'>
         <HamburgerMenuIcon isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </div>
-      <ul className='mr-3 flex h-full flex-col items-center justify-center gap-6'>
+      <ul className='mr-3 flex h-full flex-col items-center justify-center gap-6 font-mono'>
         {navItems.map((item, index) => (
           <li key={index} className='px-4'>
             <a
               href={item.href}
-              className='hover:text-spindrift flex flex-col items-center justify-center text-lg text-white transition duration-200 ease-linear'
+              className='hover:text-spindrift flex flex-col items-center justify-center font-mono text-lg text-white transition duration-200 ease-linear'
             >
               <span className='text-spindrift'>0{index + 1}. </span>
               <span>{item.name}</span>

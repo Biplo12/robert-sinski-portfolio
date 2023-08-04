@@ -7,15 +7,15 @@ import NavbarResponsiveMenu from '@/components/Layout/Partials/NavbarResponsiveM
 const NavbarList: React.FC = (): JSX.Element => {
   const [isMenuOpen, toggleMenu] = useToggle(false);
   const navItems = [
-    { name: 'About', href: '/' },
-    { name: 'Expirience', href: '/' },
-    { name: 'Work', href: '/' },
-    { name: 'Contact', href: '/' },
+    { name: 'About', href: '/#about' },
+    { name: 'Work', href: '/#expirience' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
     <>
-      <nav className='mxmd:hidden relative'>
+      <nav className='mxmd:hidden relative font-mono'>
         <ul className='mr-3 flex justify-end gap-3'>
           {navItems.map((item, index) => (
             <li key={index} className='px-4'>

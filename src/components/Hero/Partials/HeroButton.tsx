@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroButton: React.FC = (): JSX.Element => {
   return (
-    <div className='relative z-20 flex flex-col items-start justify-start'>
+    <div className='relative z-20 flex flex-col items-start justify-start font-mono'>
       <a
         href='/resume.pdf'
         target='_blank'

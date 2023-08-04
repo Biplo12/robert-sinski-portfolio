@@ -17,10 +17,19 @@
   background: #112240;
 }
 
-body {
-  font-family: 'SF Mono', monospace;
+html {
+  scroll-behavior: smooth;
 }
 
+#about {
+  scroll-padding-top: 130px;
+}
+#experience {
+  scroll-padding-top: 100px;
+}
+#projects {
+  scroll-padding-top: 130px;
+}
 .expand {
   position: relative;
   text-decoration: none;

@@ -9,7 +9,7 @@ const ResumeButton: React.FC<IResumeButtonProps> = ({
 }): JSX.Element => {
   return (
     <div
-      className={`relative z-20 flex flex-col items-start justify-start ${
+      className={`relative z-20 flex flex-col items-start justify-start font-mono ${
         isMenuOpen ? 'mxmd:flex' : 'mxmd:hidden'
       }`}
     >
