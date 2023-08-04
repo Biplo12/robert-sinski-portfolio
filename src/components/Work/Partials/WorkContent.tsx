@@ -62,7 +62,7 @@ const WorkContent: React.FC<IWorkContentProps> = ({
             return (
               <li
                 key={index}
-                className='text-grey-text max-w-[600px] text-left text-sm font-bold'
+                className='text-grey-text max-w-[600px] text-left text-sm'
               >
                 {description}
               </li>

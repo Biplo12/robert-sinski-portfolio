@@ -9,7 +9,7 @@ export default {
         'liberty-blue': '#0A192F',
         spindrift: '#64FFDA',
         'dark-eclipse': '#112240',
-        'grey-text': '#ffffffa6',
+        'grey-text': '#EEEEEE',
       },
       fontSize: {
         '4xl': '2.5rem',

@@ -25,7 +25,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
             key={index}
             className={`max-w-[600px] text-${
               isLeftSide ? 'left' : 'right'
-            } mxmd:text-left text-sm font-bold text-white`}
+            } mxmd:text-left text-grey-text text-sm`}
           >
             {description}
           </li>
