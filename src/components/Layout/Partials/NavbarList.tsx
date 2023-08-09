@@ -8,7 +8,7 @@ import NavbarResponsiveMenu from '@/components/Layout/Partials/NavbarResponsiveM
 
 const NavbarList: React.FC = (): JSX.Element => {
   const [isMenuOpen, toggleMenu] = useCycle(false, true);
-  useIsMobile(toggleMenu);
+  useIsMobile(toggleMenu, isMenuOpen);
   const navItems = [
     { name: 'About', href: '/#about' },
     { name: 'Work', href: '/#expirience' },

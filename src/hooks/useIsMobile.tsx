@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useIsMobile = (toggleMenu: () => void) => {
+const useIsMobile = (toggleMenu: () => void, isMenuOpen: boolean) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -16,10 +16,10 @@ const useIsMobile = (toggleMenu: () => void) => {
   }, []);
 
   useEffect(() => {
-    if (!isMobile) {
+    if (!isMobile && isMenuOpen) {
       toggleMenu();
     }
-  }, [isMobile, toggleMenu]);
+  }, [isMenuOpen, isMobile, toggleMenu]);
 
   return isMobile;
 };
