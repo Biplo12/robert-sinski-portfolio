@@ -82,3 +82,13 @@ html {
   stroke-dashoffset: -134;
   stroke-width: 3;
 }
+
+.underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 100%;
+  background: var(--accent);
+}

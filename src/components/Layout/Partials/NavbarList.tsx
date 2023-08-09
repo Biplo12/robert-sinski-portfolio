@@ -1,12 +1,14 @@
-import { motion } from 'framer-motion';
-import React from 'react';
+import { AnimatePresence, motion, useCycle } from 'framer-motion';
+import React from 'react'; // Import useEffect and useState
 
-import useToggle from '@/hooks/useToggle';
+import useIsMobile from '@/hooks/useIsMobile';
 
 import HamburgerMenuIcon from '@/components/Layout/Partials/HamburgerMenuIcon';
 import NavbarResponsiveMenu from '@/components/Layout/Partials/NavbarResponsiveMenu';
+
 const NavbarList: React.FC = (): JSX.Element => {
-  const [isMenuOpen, toggleMenu] = useToggle(false);
+  const [isMenuOpen, toggleMenu] = useCycle(false, true);
+  useIsMobile(toggleMenu);
   const navItems = [
     { name: 'About', href: '/#about' },
     { name: 'Work', href: '/#expirience' },
@@ -14,31 +16,29 @@ const NavbarList: React.FC = (): JSX.Element => {
     { name: 'Contact', href: '/#contact' },
   ];
 
-  const variants = {
-    open: {
-      transition: { staggerChildren: 0.07, delayChildren: 0.2 },
-    },
-    closed: {
-      transition: { staggerChildren: 0.05, staggerDirection: -1 },
-    },
-  };
-
   return (
     <>
-      <nav className='mxmd:hidden relative font-mono'>
-        <motion.ul className='mr-3 flex justify-end gap-3' variants={variants}>
-          {navItems.map((item, index) => (
-            <li key={index} className='px-4'>
-              <a
-                href={item.href}
-                className='hover:text-spindrift text-sm text-white transition duration-200 ease-linear'
+      <nav className='mxmd:hidden font-mono'>
+        <ul className='mr-3 flex justify-end gap-8'>
+          <AnimatePresence>
+            {navItems.map((item, index) => (
+              <motion.li
+                key={index}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <span className='text-spindrift'>0{index + 1}. </span>
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </motion.ul>
+                <a
+                  href={item.href}
+                  className='hover:text-spindrift text-sm text-white transition duration-200 ease-linear'
+                >
+                  <span className='text-spindrift'>0{index + 1}. </span>
+                  {item.name}
+                </a>
+              </motion.li>
+            ))}
+          </AnimatePresence>
+        </ul>
       </nav>
       <HamburgerMenuIcon isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       <div

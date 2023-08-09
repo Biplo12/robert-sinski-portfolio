@@ -6,10 +6,10 @@ import * as React from 'react';
 import AboutMe from '@/components/AboutMe/AboutMe';
 import Contact from '@/components/Contact/Contact';
 import Hero from '@/components/Hero/Hero';
+import Socials from '@/components/Hero/Partials/Socials';
 import Footer from '@/components/Layout/Footer';
 import Navbar from '@/components/Layout/Navbar';
 import Projects from '@/components/Projects/Projects';
-import Socials from '@/components/Socials/Socials';
 import Work from '@/components/Work/Work';
 
 import { isProd } from '@/constant/env';

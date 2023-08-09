@@ -1,8 +1,17 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
+import useHeroVariants from '@/hooks/useHeroVariants';
+
 const HeroButton: React.FC = (): JSX.Element => {
+  const { buttonVariants } = useHeroVariants();
   return (
-    <div className='relative z-20 flex flex-col items-start justify-start font-mono'>
+    <motion.div
+      className='relative z-20 flex flex-col items-start justify-start font-mono'
+      variants={buttonVariants}
+      initial='hidden'
+      animate='visible'
+    >
       <a
         href='/resume.pdf'
         target='_blank'
@@ -12,7 +21,7 @@ const HeroButton: React.FC = (): JSX.Element => {
         Check out my resume!
       </a>
       <span className='bg-spindrift absolute left-0 top-10 z-10 h-12 w-[200px] transform rounded-sm' />
-    </div>
+    </motion.div>
   );
 };
 

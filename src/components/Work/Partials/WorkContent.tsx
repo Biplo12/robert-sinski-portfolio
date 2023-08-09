@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
 
 interface IWorkContentProps {
@@ -35,42 +36,52 @@ const WorkContent: React.FC<IWorkContentProps> = ({
   ];
   const item = workContent?.[activeItem];
   return (
-    <div className='flex w-full max-w-[800px] flex-col items-start justify-center'>
-      <div className='flex w-full flex-col items-start justify-center gap-4'>
-        <div className='flex w-full flex-col items-start justify-center gap-2'>
-          <div className='font-calibre flex items-center justify-start gap-2'>
-            <h3 className='text-left text-xl font-bold text-white'>
-              {item.title}
-            </h3>
-            {item.linkLabel && (
-              <a
-                href={item.link}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-spindrift text-left text-sm font-bold'
-              >
-                {item.linkLabel}
-              </a>
-            )}
+    <AnimatePresence mode='wait'>
+      <motion.div
+        key={activeItem ? activeItem : 'default'}
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: -10, opacity: 0 }}
+        transition={{ duration: 0.2 }}
+      >
+        <div className='flex w-full max-w-[800px] flex-col items-start justify-center'>
+          <div className='flex w-full flex-col items-start justify-center gap-4'>
+            <div className='flex w-full flex-col items-start justify-center gap-2'>
+              <div className='font-calibre flex items-center justify-start gap-2'>
+                <h3 className='text-left text-xl font-bold text-white'>
+                  {item.title}
+                </h3>
+                {item.linkLabel && (
+                  <a
+                    href={item.link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-spindrift text-left text-sm font-bold'
+                  >
+                    {item.linkLabel}
+                  </a>
+                )}
+              </div>
+              <h4 className='text-left font-mono text-sm font-bold text-white'>
+                {item.date}
+              </h4>
+            </div>
+            <ul className='marker:text-spindrift font-calibre flex w-full list-inside list-disc flex-col items-start justify-center gap-2'>
+              {item.description.map((description, index) => {
+                return (
+                  <li
+                    key={index}
+                    className='text-grey-text max-w-[600px] text-left text-sm'
+                  >
+                    {description}
+                  </li>
+                );
+              })}
+            </ul>
           </div>
-          <h4 className='text-left font-mono text-sm font-bold text-white'>
-            {item.date}
-          </h4>
         </div>
-        <ul className='marker:text-spindrift font-calibre flex w-full list-inside list-disc flex-col items-start justify-center gap-2'>
-          {item.description.map((description, index) => {
-            return (
-              <li
-                key={index}
-                className='text-grey-text max-w-[600px] text-left text-sm'
-              >
-                {description}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </div>
+      </motion.div>
+    </AnimatePresence>
   );
 };
 export default WorkContent;

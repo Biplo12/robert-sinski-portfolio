@@ -1,5 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
+
+import useHeroVariants from '@/hooks/useHeroVariants';
 
 import GitHub from '~/svg/github.svg';
 import LinkedIn from '~/svg/linkedin.svg';
@@ -21,8 +24,16 @@ const Socials: React.FC = (): JSX.Element => {
       icon: LinkedIn,
     },
   ];
+
+  const { socialsVariants } = useHeroVariants();
+
   return (
-    <div className='mxmd:hidden fixed bottom-0 left-6 flex flex-col items-center justify-center gap-5'>
+    <motion.div
+      className='mxmd:hidden fixed bottom-0 left-6 flex flex-col items-center justify-center gap-5'
+      variants={socialsVariants}
+      initial='hidden'
+      animate='visible'
+    >
       {socialLinks.map((sociallink) => (
         <a
           key={sociallink.name}
@@ -58,7 +69,7 @@ const Socials: React.FC = (): JSX.Element => {
           isHovered.github || isHovered.linkedin ? 'bg-spindrift' : 'bg-white'
         }`}
       />
-    </div>
+    </motion.div>
   );
 };
 export default Socials;
