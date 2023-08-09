@@ -6,6 +6,7 @@ import * as React from 'react';
 import AboutMe from '@/components/AboutMe/AboutMe';
 import Contact from '@/components/Contact/Contact';
 import Hero from '@/components/Hero/Hero';
+import Footer from '@/components/Layout/Footer';
 import Navbar from '@/components/Layout/Navbar';
 import Projects from '@/components/Projects/Projects';
 import Socials from '@/components/Socials/Socials';
@@ -41,6 +42,7 @@ export default function HomePage() {
         <Projects />
         <Contact />
       </div>
+      <Footer />
     </main>
   );
 }

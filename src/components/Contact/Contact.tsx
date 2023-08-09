@@ -2,6 +2,7 @@ import React from 'react';
 
 import ContactButton from '@/components/Contact/Partials/ContactButton';
 import ContactHeader from '@/components/Contact/Partials/ContactHeader';
+import ContactSocials from '@/components/Contact/Partials/ContactSocials';
 const Contact: React.FC = (): JSX.Element => {
   return (
     <div
@@ -10,6 +11,7 @@ const Contact: React.FC = (): JSX.Element => {
     >
       <ContactHeader />
       <ContactButton />
+      <ContactSocials />
     </div>
   );
 };

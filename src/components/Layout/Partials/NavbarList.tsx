@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import useToggle from '@/hooks/useToggle';
@@ -13,10 +14,19 @@ const NavbarList: React.FC = (): JSX.Element => {
     { name: 'Contact', href: '/#contact' },
   ];
 
+  const variants = {
+    open: {
+      transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+    },
+    closed: {
+      transition: { staggerChildren: 0.05, staggerDirection: -1 },
+    },
+  };
+
   return (
     <>
       <nav className='mxmd:hidden relative font-mono'>
-        <ul className='mr-3 flex justify-end gap-3'>
+        <motion.ul className='mr-3 flex justify-end gap-3' variants={variants}>
           {navItems.map((item, index) => (
             <li key={index} className='px-4'>
               <a
@@ -28,7 +38,7 @@ const NavbarList: React.FC = (): JSX.Element => {
               </a>
             </li>
           ))}
-        </ul>
+        </motion.ul>
       </nav>
       <HamburgerMenuIcon isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       <div
