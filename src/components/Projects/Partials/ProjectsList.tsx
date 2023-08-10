@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion';
 import React from 'react';
 
 import ProjectItem from '@/components/Projects/Partials/ProjectItem';
@@ -44,7 +45,11 @@ const ProjectsList: React.FC = (): JSX.Element => {
   return (
     <div className='mxmd:gap-16 relative mt-8 flex max-w-[1125px] flex-wrap justify-center'>
       {projects.map((project, index) => (
-        <ProjectItem key={index} project={project} projectIndex={index} />
+        <>
+          <AnimatePresence>
+            <ProjectItem key={index} project={project} projectIndex={index} />
+          </AnimatePresence>
+        </>
       ))}
     </div>
   );

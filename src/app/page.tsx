@@ -32,7 +32,7 @@ export default function HomePage() {
         />
       )}
       <Navbar />
-      <div className='mxmd:px-8 px-20'>
+      <div className='mxmd:px-5 px-20'>
         <div className='mt-[80px] flex h-[100vh] w-full flex-col items-center justify-center'>
           <Hero />
         </div>
@@ -41,8 +41,8 @@ export default function HomePage() {
         <Work />
         <Projects />
         <Contact />
+        <Footer />
       </div>
-      <Footer />
     </main>
   );
 }

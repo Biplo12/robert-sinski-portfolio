@@ -92,3 +92,9 @@ html {
   width: 100%;
   background: var(--accent);
 }
+
+.text-gradient {
+  background: -webkit-linear-gradient(45deg, #64ffda, #1b458c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

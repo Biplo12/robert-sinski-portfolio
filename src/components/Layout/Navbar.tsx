@@ -13,7 +13,7 @@ const Navbar: React.FC = (): JSX.Element => {
   const isTop = useIsTop();
   return (
     <header
-      className={`fixed z-50 flex h-20 w-full items-center justify-between px-8 text-white duration-150 ease-linear ${
+      className={`mxmd:px-5 fixed z-50 flex h-20 w-full items-center justify-between px-8 text-white duration-150 ease-linear ${
         scrollDirection === 'down' ? '-top-36' : 'top-0'
       } ${isTop ? '' : 'bg-liberty-blue bg-opacity-90 shadow-lg'}`}
       role='navigation'

@@ -3,7 +3,6 @@ import React from 'react';
 const NavbarLogo: React.FC = (): JSX.Element => {
   return (
     <motion.div
-      className='px-4'
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
