@@ -13,7 +13,6 @@ interface IProjectContentProps {
     website: string;
     description: string[];
     tech: string[];
-    image: string;
   };
   side: string;
 }

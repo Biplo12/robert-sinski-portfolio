@@ -13,7 +13,6 @@ interface IProjectItemProps {
     website: string;
     description: string[];
     tech: string[];
-    image: string;
   };
   projectIndex: number;
 }
