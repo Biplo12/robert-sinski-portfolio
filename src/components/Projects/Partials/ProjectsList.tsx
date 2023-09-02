@@ -5,6 +5,40 @@ import ProjectItem from '@/components/Projects/Partials/ProjectItem';
 const ProjectsList: React.FC = (): JSX.Element => {
   const projects = [
     {
+      title: 'Spotidownload - Spotify Playlist Downloader',
+      github: 'https://github.com/Biplo12/SpotiDownload',
+      website: 'https://spotidownload.vercel.app/',
+      description: [
+        'Designed a user-friendly app for playlist conversion, allowing users to input playlist IDs and easily download Spotify playlists.',
+        'Crafted an intuitive interface with Spotify login, YouTube song search, and ZIP package generation features for an engaging user experience.',
+        'Implemented a backend server to handle API requests and authentication, ensuring a secure and reliable experience for users.',
+      ],
+      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
+    },
+    {
+      title: 'Realtime Colors Application Clone',
+      github: 'https://github.com/Biplo12/realtime-colors-clone',
+      website: 'https://realtime-colors-clone.vercel.app/',
+      description: [
+        'Crafted an interactive color playground inspired by Realtime Colors, demonstrating frontend skills through a user-friendly interface and dynamic color customization.',
+        'Designed an intuitive interface with features like color randomization and locking, providing users with an engaging platform to experiment with color palettes.',
+        'Implemented export options and keyboard shortcuts for easy color integration into projects, demonstrating attention to user experience and accessibility.',
+      ],
+      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
+    },
+    {
+      title: 'Kamil Siński - Serwis Komputerowy',
+      github:
+        'https://github.com/Biplo12/kamil-sinski-serwis-komputerowy-Fullstack',
+      website: 'https://www.kamilsinski.pl/',
+      description: [
+        'Developed a website for a local computer repair business.',
+        'Implemented a user-friendly contact form to facilitate communication with potential clients.',
+        'Ensured proper SEO optimization, including meta tags, headings, and page structure, to improve search engine visibility.',
+      ],
+      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
+    },
+    {
       title: 'Sorting Algorithm Visualizer',
       github: 'https://github.com/Biplo12/sorting-algorithms',
       website: 'https://sorting-algorithms-brown.vercel.app/',
@@ -25,29 +59,6 @@ const ProjectsList: React.FC = (): JSX.Element => {
         'Provided functionality for users to draw walls on the grid, allowing them to create obstacles for the pathfinding algorithm to navigate around.',
       ],
       tech: ['Vite', 'TypeScript', 'TailwindCSS', 'Vercel'],
-    },
-    {
-      title: 'Kamil Siński - Serwis Komputerowy',
-      github:
-        'https://github.com/Biplo12/kamil-sinski-serwis-komputerowy-Fullstack',
-      website: 'https://www.kamilsinski.pl/',
-      description: [
-        'Developed a website for a local computer repair business.',
-        'Implemented a user-friendly contact form to facilitate communication with potential clients.',
-        'Ensured proper SEO optimization, including meta tags, headings, and page structure, to improve search engine visibility.',
-      ],
-      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
-    },
-    {
-      title: 'Realtime Colors Application Clone',
-      github: 'https://github.com/Biplo12/realtime-colors-clone',
-      website: 'https://realtime-colors-clone.vercel.app/',
-      description: [
-        'Crafted an interactive color playground inspired by Realtime Colors, demonstrating frontend skills through a user-friendly interface and dynamic color customization.',
-        'Designed an intuitive interface with features like color randomization and locking, providing users with an engaging platform to experiment with color palettes.',
-        'Implemented export options and keyboard shortcuts for easy color integration into projects, demonstrating attention to user experience and accessibility.',
-      ],
-      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
     },
   ];
   return (
