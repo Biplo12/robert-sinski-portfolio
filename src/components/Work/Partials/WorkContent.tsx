@@ -10,6 +10,21 @@ const WorkContent: React.FC<IWorkContentProps> = ({
 }): JSX.Element => {
   const workContent = [
     {
+      title: 'Fundacja "Polskie Maki"',
+      linkLabel: '@PolskieMaki',
+      link: 'https://polskiemaki.org/',
+      date: 'October 2023 - December 2023',
+      description: [
+        'Designed & developed responsive website for two online games.',
+        'Multiplayer sessions without user logins, like Kahoot.',
+        'Integrated geolocation maps and location-specific quizzes.',
+        'Created leaderboards, virtual card collection, and game summaries.',
+        'Mobile-friendly with QR code scanning; desktop support.',
+        "Expanded client's database; enabled email result export.",
+        'Utilized FIGMA for graphics and design.',
+      ],
+    },
+    {
       title: 'Anfata Games',
       linkLabel: '@AnfataGames',
       link: 'https://arrland.com/',
