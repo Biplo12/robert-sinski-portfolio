@@ -22,11 +22,11 @@ const WorkNavigation: React.FC<IWorkNavigationProps> = ({
           return (
             <button
               key={index}
-              className={`hover:bg-spindrift hover:text-spindrift relative flex min-h-[40px] min-w-[200px] items-center justify-start bg-opacity-[0.075] transition-all duration-300 ease-in-out hover:bg-opacity-[0.075]
+              className={`hover:bg-spindrift hover:text-spindrift border-spindrift relative flex min-h-[40px] min-w-[200px] items-center justify-start border-l border-opacity-50 bg-opacity-[0.075] transition-all duration-300 ease-in-out hover:bg-opacity-[0.075]
                   ${
                     activeItem === index
-                      ? 'border-spindrift bg-spindrift text-spindrift bg-opacity-[0.075]'
-                      : 'border-spindrift'
+                      ? 'bg-spindrift text-spindrift bg-opacity-[0.075]'
+                      : ''
                   }
               `}
               onClick={() => handleActiveItem(index)}

@@ -15,7 +15,7 @@ const ContactSocials: React.FC = (): JSX.Element => {
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/robert-si%C5%84ski-037398227',
+      url: 'https://www.linkedin.com/in/robert-siński',
       icon: LinkedIn,
     },
   ];
