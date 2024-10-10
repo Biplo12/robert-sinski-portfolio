@@ -2,16 +2,16 @@ import React from 'react';
 
 const skillsData = [
   {
+    title: 'Languages:',
+    skills: ['JavaScript', 'TypeScript', 'Python'],
+  },
+  {
     title: 'Frontend:',
-    skills: ['Next.js', 'TailwindCSS', 'TypeScript', 'Jest'],
+    skills: ['React', 'Next.js', 'TailwindCSS', 'TypeScript', 'Jest'],
   },
   {
     title: 'Backend:',
-    skills: ['Node.js', 'Express.js', 'MongoDB', 'Firebase'],
-  },
-  {
-    title: 'Others:',
-    skills: ['Figma', 'Postman', 'Sentry', 'Markdown'],
+    skills: ['Node.js', 'Convex', 'Express.js', 'MongoDB', 'Firebase'],
   },
 ];
 

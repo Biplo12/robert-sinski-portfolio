@@ -6,7 +6,7 @@ const ProjectsHeader: React.FC = (): JSX.Element => {
         <span className='text-spindrift text-xl'>03. </span>
         My projects
       </h2>
-      <div className='h-[1px] w-full max-w-[910px] bg-white bg-opacity-20' />
+      <div className='h-[1px] w-full max-w-[850px] bg-white bg-opacity-20' />
     </div>
   );
 };

@@ -10,31 +10,28 @@ const AboutMeDescription: React.FC = (): JSX.Element => {
       <div className='mt-4 flex items-center justify-center'>
         <div>
           <p className='text-grey-text font-calibre max-w-[600px] whitespace-pre-wrap break-words'>
-            As a passionate and versatile full-stack engineer, I find joy in
-            crafting digital marvels that breathe life on the internet. My
-            expertise lies in developing exceptional websites and web
-            applications that deliver seamless, user-centric experiences. With a
-            sharp eye for detail and a dedication to pixel-perfect design, I
-            ensure every interface exudes elegance and usability. <br />
+            I am a dedicated full-stack engineer who enjoys creating websites
+            and web applications that provide great user experiences. I pay
+            close attention to detail and strive for a clean and functional
+            design in every interface. <br />
             <br />
-            On the backend, I thrive on creating modern, efficient, and scalable
-            solutions that drive the performance of these digital creations. My
-            insatiable curiosity and love for learning keep me on the cutting
-            edge of technology, constantly exploring new tools and techniques.
-            With a solid track record of successful projects and a knack for
-            problem-solving, I am{' '}
+            On the backend, I focus on building efficient and scalable solutions
+            that improve the performance of my projects. I love learning about
+            new tools and technologies, which helps me stay updated in the
+            fast-paced tech world. With a strong history of successful projects
+            and a problem-solving mindset, I am{' '}
             <a
               href='/resume.pdf'
               className='text-spindrift expand opacity-100'
               target='_blank'
               rel='noreferrer'
             >
-              actively
+              currently
             </a>{' '}
-            seeking a full-time position as a full-stack engineer. My ambition
-            is to contribute my skills and ingenuity to innovative ventures,
-            making a significant impact in the world of web development. Let's
-            connect and build something extraordinary{' '}
+            looking for a full-time position as a full-stack engineer. I want to
+            use my skills to help create innovative projects that make a
+            difference in web development. Let's connect and build something
+            great{' '}
             <a
               href={`mailto:${MAIL}`}
               className='text-spindrift expand opacity-100'
@@ -42,6 +39,7 @@ const AboutMeDescription: React.FC = (): JSX.Element => {
               together.
             </a>
           </p>
+
           <br />
           <p className='text-grey-text max-w-[650px] whitespace-pre-wrap break-words'>
             My expertise lies in developing exceptional websites and web

@@ -8,40 +8,67 @@ const REPOSITORIES_LINK = 'https://github.com/Biplo12?tab=repositories';
 const ProjectsList: React.FC = (): JSX.Element => {
   const projects = [
     {
-      title: 'Likeness API v1',
-      github: 'https://github.com/Biplo12/likeness-api',
-      website: 'https://likeness-api.vercel.app/',
+      title: 'SkillBridge (WIP)',
+      github: '',
+      website: '',
       description: [
-        'Text Comparison: Likeness API v1 allows users to compare the similarity of 2 strings',
-        'Secure Authentication: Users can sign in via Google or GitHub accounts',
-        'Simple Integration: The API provides a straightforward endpoint for text comparison',
+        'A platform connecting developers and designers to collaborate on side projects and upskill together.',
+        'Features seamless matching, dynamic search, and integrated communication tools.',
+        'Aims to foster innovation and professional growth in the tech community.',
       ],
-      tech: ['Next', 'Tailwind', 'Typescript', 'Clerk', 'Prisma', 'MongoDB'],
+      tech: ['React', 'Next.js', 'TailwindCSS', 'TypeScript', 'Convex'],
+    },
+    {
+      title: 'BoardFlow - Cooperative Whiteboard App',
+      github: 'https://github.com/Biplo12/BoardFlow',
+      website: 'https://board-flow.vercel.app/',
+      description: [
+        'Built a collaborative whiteboard application allowing users to create organizations and work together on boards.',
+        'Utilized tools such as text, notes, shapes, images, and drawing tools for an interactive experience.',
+        'Implemented features for object manipulation including selection, resizing, deletion, and layering.',
+      ],
+      tech: [
+        'Next.js',
+        'TailwindCSS',
+        'TypeScript',
+        'Clerk',
+        'Convex',
+        'Liveblocks',
+      ],
     },
     {
       title: 'Realtime Colors Application Clone',
       github: 'https://github.com/Biplo12/realtime-colors-clone',
       website: 'https://realtime-colors-clone.vercel.app/',
       description: [
-        'Crafted an interactive color playground inspired by Realtime Colors, demonstrating frontend skills through a user-friendly interface and dynamic color customization.',
-        'Designed an intuitive interface with features like color randomization and locking, providing users with an engaging platform to experiment with color palettes.',
-        'Implemented export options and keyboard shortcuts for easy color integration into projects, demonstrating attention to user experience and accessibility.',
+        'Created an interactive color playground to visualize and customize color schemes.',
+        'Features include color randomization, locking colors, and dark/light mode options.',
+        'Offers a user-friendly interface with flexible customization capabilities.',
       ],
-      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
+      tech: ['Vite', 'TailwindCSS', 'TypeScript', 'React'],
     },
     {
-      title: 'Kamil Siński - Serwis Komputerowy',
-      github:
-        'https://github.com/Biplo12/kamil-sinski-serwis-komputerowy-Fullstack',
-      website: 'https://www.kamilsinski.pl/',
+      title: 'Airbnb Stay Sync Extension',
+      github: 'https://github.com/Biplo12/airbnb-stay-sync-chrome-ext',
+      website: '',
       description: [
-        'Developed a website for a local computer repair business.',
-        'Implemented a user-friendly contact form to facilitate communication with potential clients.',
-        'Ensured proper SEO optimization, including meta tags, headings, and page structure, to improve search engine visibility.',
+        'Developed a browser extension to sync Airbnb stays to calendars.',
+        'Extracts stay details from the Airbnb website and generates an .ics file for calendar import.',
       ],
-      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
+      tech: ['JavaScript'],
+    },
+    {
+      title: 'Filmweb Cinemas Data Scraper',
+      github: 'https://github.com/Biplo12/filmweb-cinemas-data-scraper',
+      website: '',
+      description: [
+        'Node.js application that scrapes cinema and movie screening data from the Filmweb website.',
+        'Utilizes Puppeteer and JSDOM for web scraping and Prisma for database interactions.',
+      ],
+      tech: ['Puppeteer', 'Node.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
     },
   ];
+
   return (
     <div className='relative mt-8 flex max-w-[1125px] flex-wrap justify-center gap-16'>
       {projects.map((project, index) => (
@@ -51,16 +78,16 @@ const ProjectsList: React.FC = (): JSX.Element => {
           </AnimatePresence>
         </Fragment>
       ))}
-      <div className='relative z-20 flex flex-col items-start justify-start font-mono'>
+      <div className='relative z-20 flex w-[200px] flex-col items-start justify-start font-mono'>
         <a
           href={REPOSITORIES_LINK}
           target='_blank'
           rel='noopener noreferrer'
-          className='border-spindrift text-spindrift bg-liberty-blue relative z-20 w-[175px] rounded-sm border px-5 py-2 text-center text-sm font-bold transition duration-150 ease-linear hover:translate-x-[-2px] hover:translate-y-[-2px] hover:transform'
+          className='border-spindrift text-spindrift bg-liberty-blue relative z-20 w-full rounded-sm border px-5 py-2 text-center text-sm font-bold transition duration-150 ease-linear hover:translate-x-[-2px] hover:translate-y-[-2px] hover:transform'
         >
           And much more...
         </a>
-        <span className='bg-spindrift absolute left-0 top-0 z-10 h-[39px] w-[175px] transform rounded-sm' />
+        <span className='bg-spindrift absolute left-0 top-0 z-10 h-[39px] w-full transform rounded-sm' />
       </div>
     </div>
   );

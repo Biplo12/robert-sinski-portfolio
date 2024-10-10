@@ -10,7 +10,13 @@ const WorkNavigation: React.FC<IWorkNavigationProps> = ({
   setActiveItem,
   activeItem,
 }): JSX.Element => {
-  const workNavItems = ['Polskie Maki', 'Anfata Games', 'Mateusz Ludyga'];
+  const workNavItems = [
+    'Gravity Rifters',
+    'Enchained Games',
+    'Polskie Maki',
+    'Anfata Games',
+    'Mateusz Ludyga',
+  ];
   const handleActiveItem = (index: number) => {
     setActiveItem(index);
   };

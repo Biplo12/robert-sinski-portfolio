@@ -6,6 +6,7 @@ import useSectionVariants from '@/hooks/useSectionVariants';
 import WorkContent from '@/components/Work/Partials/WorkContent';
 import WorkHeader from '@/components/Work/Partials/WorkHeader';
 import WorkNavigation from '@/components/Work/Partials/WorkNavigation';
+
 const Work: React.FC = (): JSX.Element => {
   const [activeItem, setActiveItem] = useState(0);
   const [animationPlayed, setAnimationPlayed] = useState(false);
@@ -17,6 +18,7 @@ const Work: React.FC = (): JSX.Element => {
       setAnimationPlayed(true);
     }
   };
+
   return (
     <motion.div
       className='mxmd:py-10 flex h-screen w-full flex-col items-center justify-center'
@@ -44,7 +46,9 @@ const Work: React.FC = (): JSX.Element => {
             activeItem={activeItem}
           />
         </div>
-        <WorkContent activeItem={activeItem} />
+        <div className='flex h-full items-start justify-start'>
+          <WorkContent activeItem={activeItem} />
+        </div>
       </div>
     </motion.div>
   );
